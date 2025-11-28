@@ -1,0 +1,30 @@
+<div id="<%= dom_id user %>">
+  <p>
+    <strong>Name:</strong>
+    <%= user.name %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= user.email %>
+  </p>
+
+  <p>
+    <strong>Role:</strong>
+    <span style="padding: 4px 8px; background-color: <%= user.seller? ? '#e3f2fd' : '#f3e5f5' %>; border-radius: 4px;">
+      <%= user.role.capitalize %>
+    </span>
+  </p>
+
+  <p>
+    <strong>Phone:</strong>
+    <%= user.phone %>
+  </p>
+
+  <p>
+    <strong>Address:</strong>
+    <%= user.address %>
+  </p>
+
+</div>
+
